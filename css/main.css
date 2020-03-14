@@ -440,13 +440,18 @@ body {
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.4;
   font-size: 16px;
-  background-color: #252525;
-  height: 4000px; }
+  background-color: #252525; }
 
 h1,
 h2,
-h3 {
-  line-height: 1.2; }
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif; }
 
 ul > li {
   list-style: none; }
@@ -524,7 +529,7 @@ a {
           margin-left: 1.5rem; } }
       .Header-menu li a {
         transition-duration: 0.4s;
-        font-size: 0.8em;
+        font-size: 0.85em;
         letter-spacing: 1px;
         align-items: center;
         margin: auto; }
@@ -532,3 +537,35 @@ a {
           color: #d63031; }
       .Header-menu li.active a {
         color: #d63031; }
+
+.Banner {
+  background: url(../images/banner.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 36em;
+  position: relative; }
+  .Banner-opacity {
+    background: rgba(0, 0, 0, 0.43);
+    min-height: 36em; }
+    @media (min-width: 768px) {
+      .Banner-opacity {
+        min-height: 48em; } }
+  @media (min-width: 768px) {
+    .Banner {
+      min-height: 48em; } }
+  .Banner-info {
+    padding-top: 7em;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .Banner-info {
+        padding-top: 11em;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto; } }
+    .Banner-info h1 {
+      font-size: 3em;
+      letter-spacing: 1px;
+      color: #ffffff;
+      text-transform: uppercase; }
+      @media (min-width: 768px) {
+        .Banner-info h1 {
+          font-size: 6em; } }

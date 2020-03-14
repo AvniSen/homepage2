@@ -3,6 +3,7 @@
   "files.exclude": {
     "**/.vscode": true,
     "**/node_modules": true,
+    "css": true,
     "package-lock.json": true
   },
   "editor.formatOnSave": true

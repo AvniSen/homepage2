@@ -1,0 +1,42 @@
+.Banner {
+  background: url(../images/banner.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 36em;
+  position: relative;
+
+  &-opacity {
+    background: rgba(0, 0, 0, 0.43);
+    min-height: 36em;
+
+    @include mq() {
+      min-height: 48em;
+    }
+  }
+
+  @include mq() {
+    min-height: 48em;
+  }
+
+  &-info {
+    padding-top: 7em;
+    text-align: center;
+
+    @include mq() {
+      padding-top: 11em;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 3em;
+      letter-spacing: 1px;
+      color: $color-white;
+      text-transform: uppercase;
+
+      @include mq() {
+        font-size: 6em;
+      }
+    }
+  }
+}

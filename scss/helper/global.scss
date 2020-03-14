@@ -3,14 +3,18 @@ body {
   line-height: 1.4;
   font-size: $font-size;
   background-color: #252525;
-
-  height: 4000px;
 }
 
 h1,
 h2,
-h3 {
-  line-height: 1.2;
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 ul > li {
