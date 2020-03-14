@@ -23,26 +23,31 @@ function browserSyncReload(done) {
 }
 
 function css() {
-  return src("scss/**/*.scss")
-    .pipe(sass())
-    .pipe(minifyCSS())
-    .pipe(dest("css/"));
+  return (
+    src("scss/*.scss")
+      .pipe(sass())
+      // .pipe(minifyCSS())
+      .pipe(dest("css/"))
+  );
 }
 
-// function js() {
-//   return src("js/**/*.js", {
-//       sourcemaps: true
-//     })
-//     .pipe(concat("app.min.js"))
-//     .pipe(dest("js"))
-// }
+function js() {
+  return src(
+    "js/**/*.js",
+    {
+      sourcemaps: true
+    }
+      .pipe(concat("app.min.js"))
+      .pipe(dest("js"))
+  );
+}
 
 function watchFiles() {
   watch("scss/**/*.scss", series(css, browserSyncReload));
-  // watch("js/**/*.js", series(js, browserSyncReload));
+  watch("js/**/*.js", series(js, browserSyncReload));
   watch("**/*.html", browserSyncReload);
 }
 
-// exports.js = js;
+exports.js = js;
 exports.css = css;
 exports.default = parallel(watchFiles, browserSync);
