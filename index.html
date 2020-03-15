@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="Banner">
+    <div class="Banner" id="home">
       <div class="Banner-opacity">
         <header class="Header">
           <div class="container">
@@ -25,8 +25,8 @@
 
             <nav class="Header-menu">
               <ul>
-                <li class="active"><a href="">Home</a></li>
-                <li><a href="">About</a></li>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Experience</a></li>
                 <li><a href="">Dropdown</a></li>
@@ -45,6 +45,38 @@
         </div>
       </div>
     </div>
+
+    <main>
+      <section class="About" id="about">
+        <div class="container">
+          <h3 class="About-title">
+            <span class="About-title-small">Some Info</span>
+            About Me
+          </h3>
+
+          <div class="About-content">
+            <p class="About-content-p">
+              Integer porttitor mollisar lorem, at molestie arcu pulvinar ut.
+            </p>
+
+            <h2 class="About-content-head">
+              Nulla pellentesque mi non laoreet eleifend. Integer porttitor
+              mollisar lorem.
+            </h2>
+
+            <p class="About-content-p2">
+              Nulla pellentesque mi non laoreet eleifend. Integer porttitor
+              mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum
+              est. Cras mi ipsum, consectetur ac ipsum Proin
+            </p>
+
+            <a href="" class="About-content-helper">
+              My Projects
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>

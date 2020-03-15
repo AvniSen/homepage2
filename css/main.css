@@ -436,8 +436,11 @@ img {
 .clear {
   clear: both; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.4;
   font-size: 16px;
   background-color: #252525; }
@@ -569,3 +572,65 @@ a {
       @media (min-width: 768px) {
         .Banner-info h1 {
           font-size: 6em; } }
+
+.About {
+  background-color: #d63031;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center; }
+  .About-title {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 3em; }
+    @media (min-width: 768px) {
+      .About-title {
+        font-size: 4em; } }
+    .About-title-small {
+      display: block;
+      font-size: 0.3em;
+      line-height: 1.1em; }
+  .About-content {
+    margin-top: 3em;
+    margin-bottom: 3em; }
+    .About-content-p {
+      font-family: "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 1.2em;
+      line-height: 1.8em;
+      letter-spacing: 0.075em;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 2em; }
+      @media (min-width: 768px) {
+        .About-content-p {
+          font-size: 1.6em; } }
+    .About-content-head {
+      color: #ffffff;
+      font-size: 1.3em;
+      letter-spacing: 0.075em;
+      line-height: 1.35em;
+      border-radius: 0.35em;
+      box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+      padding: 1em; }
+      @media (min-width: 768px) {
+        .About-content-head {
+          font-size: 2.75em; } }
+    .About-content-p2 {
+      font-size: 1.1em;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.8em;
+      width: 70%;
+      font-family: "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 3rem auto; }
+      @media (min-width: 768px) {
+        .About-content-p2 {
+          font-size: 1.3em; } }
+    .About-content-helper {
+      cursor: pointer;
+      padding: 15px 50px;
+      color: #00b894;
+      background-color: #ffffff;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: 0.2s; }
+      .About-content-helper:hover {
+        color: #ffffff;
+        background-color: #2d2c2c; }

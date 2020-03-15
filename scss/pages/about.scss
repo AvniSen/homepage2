@@ -1,0 +1,86 @@
+.About {
+  background-color: $color-red;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+
+  &-title {
+    text-transform: uppercase;
+
+    color: $color-white;
+    font-size: 3em;
+
+    @include mq() {
+      font-size: 4em;
+    }
+
+    &-small {
+      display: block;
+      font-size: 0.3em;
+      line-height: 1.1em;
+    }
+  }
+
+  &-content {
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    &-p {
+      font-family: $font-family-2;
+      font-size: 1.2em;
+
+      @include mq() {
+        font-size: 1.6em;
+      }
+
+      line-height: 1.8em;
+      letter-spacing: 0.075em;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 2em;
+    }
+
+    &-head {
+      color: $color-white;
+      font-size: 1.3em;
+
+      @include mq() {
+        font-size: 2.75em;
+      }
+      letter-spacing: 0.075em;
+      line-height: 1.35em;
+      border-radius: 0.35em;
+      box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+      padding: 1em;
+    }
+
+    &-p2 {
+      font-size: 1.1em;
+
+      @include mq() {
+        font-size: 1.3em;
+      }
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.8em;
+      width: 70%;
+      font-family: $font-family-2;
+      margin: 3rem auto;
+    }
+
+    &-helper {
+      cursor: pointer;
+
+      padding: 15px 50px;
+
+      color: $color-soft-green;
+      background-color: $color-white;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: 0.2s;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-dark;
+      }
+    }
+  }
+}
