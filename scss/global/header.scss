@@ -7,7 +7,6 @@ $Header-height: 68px;
   text-transform: uppercase;
 
   .container {
-    position: relative;
     display: flex;
     align-items: center;
     height: 100%;
@@ -18,7 +17,6 @@ $Header-height: 68px;
   }
 
   &-switch {
-    position: relative;
     left: 2em;
     margin-left: auto;
     padding: 8px 20px;

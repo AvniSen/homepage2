@@ -467,8 +467,15 @@ a {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 3rem;
-  padding-right: 3rem; }
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
+
+.upper-case {
+  text-transform: uppercase; }
 
 .Header {
   height: 68px;
@@ -476,14 +483,12 @@ a {
   padding-bottom: 0.5rem;
   text-transform: uppercase; }
   .Header .container {
-    position: relative;
     display: flex;
     align-items: center;
     height: 100%; }
   .Header-logo {
     width: 50px; }
   .Header-switch {
-    position: relative;
     left: 2em;
     margin-left: auto;
     padding: 8px 20px;
@@ -634,3 +639,79 @@ a {
       .About-content-helper:hover {
         color: #ffffff;
         background-color: #2d2c2c; }
+
+.Services {
+  background-color: #ffffff;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  text-align: center; }
+  .Services h6 {
+    font-size: 2em;
+    color: #484d55;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    margin-bottom: 2em; }
+  .Services img {
+    width: 100%; }
+  .Services h3 {
+    color: #484d55;
+    font-size: 2em;
+    margin-top: 1em; }
+  .Services p {
+    color: #b1b4b9;
+    margin-top: 1.3em;
+    font-size: 1.3em;
+    letter-spacing: 0.075em;
+    line-height: 1.5em; }
+  .Services-details {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    @media (min-width: 768px) {
+      .Services-details {
+        padding-left: 6rem;
+        padding-right: 6rem; } }
+    @media (min-width: 992px) {
+      .Services-details {
+        margin-top: 5em;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        flex-direction: row;
+        overflow: hidden; } }
+    .Services-details-item {
+      display: inline-flex;
+      margin-bottom: 5em; }
+      @media (min-width: 992px) {
+        .Services-details-item {
+          max-width: 50%;
+          margin-bottom: 6em; } }
+      .Services-details-item-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        font-size: 1.4em;
+        background-color: #2d2c2c;
+        color: #ffffff; }
+      .Services-details-item-text {
+        margin-left: 2em;
+        margin-right: 1em; }
+        @media (min-width: 768px) {
+          .Services-details-item-text {
+            margin-right: 2em; } }
+        .Services-details-item-text > h4 {
+          color: #d63031;
+          text-align: left; }
+        .Services-details-item-text > p {
+          margin-top: 0.5em;
+          font-size: 1em;
+          color: #777;
+          text-transform: capitalize;
+          text-align: justify; }
+          @media (min-width: 768px) {
+            .Services-details-item-text > p {
+              margin-top: 1.3em; } }
