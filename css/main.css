@@ -477,6 +477,19 @@ a {
 .upper-case {
   text-transform: uppercase; }
 
+.title {
+  color: #242525;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 3rem; }
+  @media (min-width: 768px) {
+    .title {
+      font-size: 4rem; } }
+  .title > span {
+    display: block; }
+
 .Header {
   height: 68px;
   padding-top: 0.5rem;
@@ -715,3 +728,50 @@ a {
           @media (min-width: 768px) {
             .Services-details-item-text > p {
               margin-top: 1.3em; } }
+
+.Experience {
+  background-color: #f7f7f7;
+  padding-top: 6em;
+  padding-bottom: 6em; }
+  .Experience-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3em; }
+    @media (min-width: 992px) {
+      .Experience-details {
+        flex-direction: row; } }
+    .Experience-details-item {
+      margin-bottom: 1.2em;
+      box-sizing: border-box; }
+      @media (min-width: 992px) {
+        .Experience-details-item {
+          max-width: 31%;
+          margin-bottom: 0; } }
+      @media (min-width: 768px) {
+        .Experience-details-item {
+          margin-bottom: 1.5em; } }
+      .Experience-details-item-photo img {
+        vertical-align: middle;
+        border-style: none;
+        width: 100%; }
+      .Experience-details-item-text {
+        background-color: #ffffff;
+        padding: 2em; }
+        .Experience-details-item-text span {
+          background-color: #d63031;
+          color: #ffffff;
+          padding: 0.25em 0.95em;
+          font-size: 0.8em; }
+        .Experience-details-item-text h4 {
+          color: #333;
+          font-size: 1.2em;
+          font-weight: 600;
+          margin-top: 0.1em;
+          margin-bottom: 0.7em; }
+        .Experience-details-item-text p {
+          color: #8c9398;
+          line-height: 1.9em;
+          letter-spacing: 2px;
+          font-size: 0.9em; }
