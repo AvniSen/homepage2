@@ -814,3 +814,30 @@ a {
       .Mid-helpers .hover:hover {
         color: #00b894;
         background-color: #ffffff; }
+
+.Project {
+  background-color: #ffffff;
+  padding-top: 6em;
+  padding-bottom: 6em; }
+  .Project-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2em; }
+    @media (min-width: 768px) {
+      .Project-details {
+        justify-content: center; } }
+    @media (min-width: 992px) {
+      .Project-details {
+        margin-left: -1em;
+        margin-right: -1em; } }
+    @media (min-width: 768px) {
+      .Project-details-item {
+        max-width: 75%; } }
+    @media (min-width: 992px) {
+      .Project-details-item {
+        max-width: 33%; } }
+    .Project-details-item img {
+      width: 100%;
+      vertical-align: middle;
+      border-style: none; }

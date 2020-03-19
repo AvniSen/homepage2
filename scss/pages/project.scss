@@ -1,0 +1,36 @@
+.Project {
+  background-color: $color-white;
+  padding-top: 6em;
+  padding-bottom: 6em;
+
+  &-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2em;
+
+    @include mq() {
+      justify-content: center;
+    }
+
+    @include mq("desktop") {
+      margin-left: -1em;
+      margin-right: -1em;
+    }
+
+    &-item {
+      @include mq() {
+        max-width: 75%;
+      }
+      @include mq("desktop") {
+        max-width: 33%;
+      }
+
+      img {
+        width: 100%;
+        vertical-align: middle;
+        border-style: none;
+      }
+    }
+  }
+}

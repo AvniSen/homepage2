@@ -2,4 +2,6 @@
 
 Gelistiriliyor...
 
-buttom icin componenet olustur
+buttom icin componenet olustur.
+
+Projects icin modal olustur.
