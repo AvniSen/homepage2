@@ -1,0 +1,57 @@
+.Mid {
+  background-color: $color-aqua;
+
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+  text-align: center;
+
+  &-title {
+    font-weight: 100;
+    font-size: 3em;
+    color: $color-white;
+  }
+
+  p {
+    width: 70%;
+    margin: 1.5em auto;
+    color: $color-soft-aqua;
+    line-height: 2em;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+
+  &-helpers {
+    display: flex;
+    justify-content: center;
+
+    &-button {
+      cursor: pointer;
+
+      padding: 15px 40px;
+      margin-right: 0.3em;
+      margin-left: 0.3em;
+
+      color: $color-soft-green;
+      background-color: $color-white;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: 0.2s;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-dark;
+      }
+    }
+
+    .hover {
+      color: $color-white;
+      background-color: $color-dark;
+
+      &:hover {
+        color: $color-soft-green;
+        background-color: $color-white;
+      }
+    }
+  }
+}
