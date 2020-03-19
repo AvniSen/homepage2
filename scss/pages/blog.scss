@@ -1,0 +1,69 @@
+.Blog {
+  background: url(../images/banner.jpg) no-repeat center;
+  background-size: cover;
+
+  padding-top: 6em;
+  padding-bottom: 6em;
+
+  h4 {
+    color: $color-soft-green;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3em;
+
+    @include mq("desktop") {
+      flex-direction: row;
+    }
+
+    &-item {
+      @include mq("desktop") {
+        max-width: 32%;
+        margin-bottom: 0;
+      }
+
+      @include mq() {
+        margin-bottom: 1.5em;
+      }
+
+      box-sizing: border-box;
+
+      margin-bottom: 1.2em;
+
+      background-color: $color-white;
+      padding: 2em;
+
+      span {
+        background-color: $color-red;
+        color: $color-white;
+        padding: 0.25em 0.95em;
+        font-size: 0.8em;
+      }
+
+      h4 {
+        color: $color-h4;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-top: 0.4em;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        color: $color-p;
+        line-height: 1.9em;
+        letter-spacing: 0.5px;
+        font-size: 0.8em;
+      }
+    }
+  }
+}

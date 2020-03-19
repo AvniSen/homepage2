@@ -1,14 +1,14 @@
 .Experience {
   background-color: $bgcolor-experience;
 
-  padding-top: 6em;
-  padding-bottom: 6em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 
   &-details {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 3em;
 
     @include mq("desktop") {
@@ -17,7 +17,7 @@
 
     &-item {
       @include mq("desktop") {
-        max-width: 31%;
+        max-width: 32%;
         margin-bottom: 0;
       }
 

@@ -731,13 +731,13 @@ a {
 
 .Experience {
   background-color: #f7f7f7;
-  padding-top: 6em;
-  padding-bottom: 6em; }
+  padding-top: 5em;
+  padding-bottom: 5em; }
   .Experience-details {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 3em; }
     @media (min-width: 992px) {
       .Experience-details {
@@ -747,7 +747,7 @@ a {
       box-sizing: border-box; }
       @media (min-width: 992px) {
         .Experience-details-item {
-          max-width: 31%;
+          max-width: 32%;
           margin-bottom: 0; } }
       @media (min-width: 768px) {
         .Experience-details-item {
@@ -841,3 +841,54 @@ a {
       width: 100%;
       vertical-align: middle;
       border-style: none; }
+
+.Blog {
+  background: url(../images/banner.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 6em;
+  padding-bottom: 6em; }
+  .Blog h4 {
+    color: #00b894;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-top: 2em;
+    margin-bottom: 1em; }
+  .Blog-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3em; }
+    @media (min-width: 992px) {
+      .Blog-details {
+        flex-direction: row; } }
+    .Blog-details-item {
+      box-sizing: border-box;
+      margin-bottom: 1.2em;
+      background-color: #ffffff;
+      padding: 2em; }
+      @media (min-width: 992px) {
+        .Blog-details-item {
+          max-width: 32%;
+          margin-bottom: 0; } }
+      @media (min-width: 768px) {
+        .Blog-details-item {
+          margin-bottom: 1.5em; } }
+      .Blog-details-item span {
+        background-color: #d63031;
+        color: #ffffff;
+        padding: 0.25em 0.95em;
+        font-size: 0.8em; }
+      .Blog-details-item h4 {
+        color: #333;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-top: 0.4em;
+        margin-bottom: 0.5em; }
+      .Blog-details-item p {
+        color: #8c9398;
+        line-height: 1.9em;
+        letter-spacing: 0.5px;
+        font-size: 0.8em; }
