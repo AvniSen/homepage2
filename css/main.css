@@ -572,32 +572,30 @@ p {
 .Banner {
   background: url(../images/banner.jpg) no-repeat center;
   background-size: cover;
-  min-height: 36em;
-  position: relative; }
+  padding-bottom: 10em;
+  text-align: center; }
   .Banner-opacity {
-    background: rgba(0, 0, 0, 0.43);
-    min-height: 36em; }
-    @media (min-width: 768px) {
-      .Banner-opacity {
-        min-height: 48em; } }
-  @media (min-width: 768px) {
-    .Banner {
-      min-height: 48em; } }
+    background: rgba(0, 0, 0, 0.5); }
   .Banner-info {
-    padding-top: 7em;
-    text-align: center; }
+    padding-top: 5em;
+    margin-left: auto;
+    margin-right: auto; }
     @media (min-width: 768px) {
       .Banner-info {
-        padding-top: 11em;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto; } }
+        padding-top: 6em;
+        width: 80%; } }
+    @media (min-width: 992px) {
+      .Banner-info {
+        padding-top: 10em;
+        width: 70%; } }
     .Banner-info h1 {
-      font-size: 3em;
-      letter-spacing: 1px;
       color: #ffffff;
+      font-size: 3.5em;
       text-transform: uppercase; }
       @media (min-width: 768px) {
+        .Banner-info h1 {
+          font-size: 5em; } }
+      @media (min-width: 992px) {
         .Banner-info h1 {
           font-size: 6em; } }
 

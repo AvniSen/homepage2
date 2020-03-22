@@ -1,40 +1,39 @@
 .Banner {
   background: url(../images/banner.jpg) no-repeat center;
   background-size: cover;
-  min-height: 36em;
-  position: relative;
+
+  padding-bottom: 10em;
+
+  text-align: center;
 
   &-opacity {
-    background: rgba(0, 0, 0, 0.43);
-    min-height: 36em;
-
-    @include mq() {
-      min-height: 48em;
-    }
-  }
-
-  @include mq() {
-    min-height: 48em;
+    background: rgba(0, 0, 0, 0.5);
   }
 
   &-info {
-    padding-top: 7em;
-    text-align: center;
+    padding-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq() {
-      padding-top: 11em;
+      padding-top: 6em;
+      width: 80%;
+    }
+
+    @include mq("desktop") {
+      padding-top: 10em;
       width: 70%;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     h1 {
-      font-size: 3em;
-      letter-spacing: 1px;
       color: $color-white;
+      font-size: 3.5em;
       text-transform: uppercase;
 
       @include mq() {
+        font-size: 5em;
+      }
+      @include mq("desktop") {
         font-size: 6em;
       }
     }
