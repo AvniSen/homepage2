@@ -5,11 +5,9 @@
   padding-top: 6em;
   padding-bottom: 6em;
 
-  h4 {
+  &-subtitle {
     color: $color-soft-green;
     font-size: 1.8em;
-    font-weight: 600;
-    text-transform: capitalize;
     letter-spacing: 2px;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -27,21 +25,15 @@
     }
 
     &-item {
-      @include mq("desktop") {
-        max-width: 32%;
-        margin-bottom: 0;
-      }
-
-      @include mq() {
-        margin-bottom: 1.5em;
-      }
+      background-color: $color-white;
 
       box-sizing: border-box;
-
-      margin-bottom: 1.2em;
-
-      background-color: $color-white;
+      margin-bottom: 1.5em;
       padding: 2em;
+
+      @include mq("desktop") {
+        max-width: 32%;
+      }
 
       span {
         background-color: $color-red;
@@ -51,18 +43,14 @@
       }
 
       h4 {
-        color: $color-h4;
         font-size: 1.2em;
-        font-weight: 600;
-        margin-top: 0.4em;
+        margin-top: 0.5em;
         margin-bottom: 0.5em;
       }
 
       p {
-        color: $color-p;
         line-height: 1.9em;
         letter-spacing: 0.5px;
-        font-size: 0.8em;
       }
     }
   }
