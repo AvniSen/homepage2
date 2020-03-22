@@ -472,7 +472,19 @@ a {
 
 p {
   color: #8c9398;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  line-height: 1.8em; }
+
+input,
+textarea {
+  letter-spacing: 1px;
+  border: 1px solid #cccccc;
+  border-radius: 5px; }
+
+button {
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500; }
 
 .container {
   max-width: 1140px;
@@ -955,10 +967,10 @@ p {
 
 .Contact {
   background-color: #ffffff;
-  padding-top: 5em;
-  padding-bottom: 5em; }
+  padding-top: 6em;
+  padding-bottom: 6em; }
   .Contact-details {
-    padding-top: 2.5em;
+    margin-top: 2.5em;
     display: flex;
     flex-direction: column; }
     @media (min-width: 992px) {
@@ -970,28 +982,26 @@ p {
       margin-bottom: 4em; }
       @media (min-width: 768px) {
         .Contact-details-address {
-          width: 80%;
+          width: 90%;
           margin-left: auto;
           margin-right: auto; } }
       @media (min-width: 992px) {
         .Contact-details-address {
-          width: 35%;
+          width: 40%;
           margin-bottom: 0; } }
       .Contact-details-address-text {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1em; }
+        margin-bottom: 1.1em; }
         .Contact-details-address-text-item {
           display: flex;
           align-items: center;
-          margin-bottom: 0.8em; }
+          margin-bottom: 1em; }
           .Contact-details-address-text-item span {
-            margin-right: 1.7em;
-            color: #d63031; }
+            color: #d63031;
+            width: 7%; }
           .Contact-details-address-text-item p {
-            letter-spacing: 0.5px;
-            line-height: 1.8em;
-            display: block; }
+            letter-spacing: 0.5px; }
       .Contact-details-address-map {
         border: 5px solid rgba(177, 180, 185, 0.2); }
         .Contact-details-address-map iframe {
@@ -1002,58 +1012,46 @@ p {
       flex-direction: column; }
       @media (min-width: 768px) {
         .Contact-details-form {
-          width: 80%;
+          width: 90%;
           margin-left: auto;
           margin-right: auto; } }
       @media (min-width: 992px) {
         .Contact-details-form {
-          width: 65%;
+          width: 60%;
           margin-bottom: 0;
-          margin-left: 4em; } }
+          margin-left: 5em; } }
       .Contact-details-form-item {
         display: flex;
         align-items: center;
-        margin-bottom: 1em; }
+        margin-bottom: 1.1em; }
         .Contact-details-form-item label {
-          width: 32%;
+          width: 50%;
           color: #333333;
           font-weight: 700; }
+          @media (min-width: 768px) {
+            .Contact-details-form-item label {
+              width: 30%; } }
           @media (min-width: 992px) {
             .Contact-details-form-item label {
-              width: 17%; } }
+              width: 25%; } }
           .Contact-details-form-item label span {
+            text-align: center;
             color: #d63031;
-            margin-right: 0.8rem; }
+            width: 15%;
+            margin-right: 0.6em; }
         .Contact-details-form-item input,
         .Contact-details-form-item textarea {
-          width: 68%;
+          width: 100%;
           padding: 0.9em 1.3em;
-          font-size: 1em;
-          letter-spacing: 1px;
-          color: #888888;
-          border: none;
-          border: 1px solid #cccccc;
-          background: none;
-          border-radius: 5px; }
-          @media (min-width: 768px) {
-            .Contact-details-form-item input,
-            .Contact-details-form-item textarea {
-              width: 100%; } }
-          @media (min-width: 992px) {
-            .Contact-details-form-item input,
-            .Contact-details-form-item textarea {
-              width: 83%; } }
+          color: #888888; }
         .Contact-details-form-item button {
-          cursor: pointer;
-          font-family: "Josefin Sans", sans-serif;
-          padding: 15px 40px;
           margin-left: auto;
           margin-top: 1em;
-          color: #ffffff;
+          padding: 15px 40px;
           background-color: #d63031;
-          border-radius: 6px;
+          color: #ffffff;
           border: 2px solid #d63031;
-          font-weight: 500;
+          border-radius: 6px;
           transition: 0.2s;
           text-transform: uppercase; }
           .Contact-details-form-item button:hover {

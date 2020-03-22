@@ -41,6 +41,20 @@ a {
 p {
   color: $color-p;
   font-size: 0.9em;
+  line-height: 1.8em;
+}
+
+input,
+textarea {
+  letter-spacing: 1px;
+  border: 1px solid $color-border;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  font-family: $font-family;
+  font-weight: 500;
 }
 
 .container {

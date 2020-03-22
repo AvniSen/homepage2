@@ -1,11 +1,11 @@
 .Contact {
   background-color: $color-white;
 
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 6em;
+  padding-bottom: 6em;
 
   &-details {
-    padding-top: 2.5em;
+    margin-top: 2.5em;
 
     display: flex;
     flex-direction: column;
@@ -22,42 +22,40 @@
       margin-bottom: 4em;
 
       @include mq() {
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
       }
 
       @include mq("desktop") {
-        width: 35%;
+        width: 40%;
         margin-bottom: 0;
       }
 
       &-text {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1em;
+        margin-bottom: 1.1em;
 
         &-item {
           display: flex;
           align-items: center;
 
-          margin-bottom: 0.8em;
+          margin-bottom: 1em;
 
           span {
-            margin-right: 1.7em;
             color: $color-red;
+            width: 7%;
           }
 
           p {
             letter-spacing: 0.5px;
-            line-height: 1.8em;
-            display: block;
           }
         }
       }
 
       &-map {
-        border: 5px solid rgba($color: $color-soft-grey, $alpha: 0.2);
+        border: 5px solid rgba($color-soft-grey, 0.2);
 
         iframe {
           width: 100%;
@@ -68,15 +66,15 @@
 
     &-form {
       @include mq() {
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
       }
 
       @include mq("desktop") {
-        width: 65%;
+        width: 60%;
         margin-bottom: 0;
-        margin-left: 4em;
+        margin-left: 5em;
       }
 
       display: flex;
@@ -86,55 +84,48 @@
         display: flex;
         align-items: center;
 
-        margin-bottom: 1em;
+        margin-bottom: 1.1em;
 
         label {
-          width: 32%;
-          @include mq("desktop") {
-            width: 17%;
+          width: 50%;
+
+          @include mq() {
+            width: 30%;
           }
+
+          @include mq("desktop") {
+            width: 25%;
+          }
+
           color: $color-h4;
           font-weight: 700;
+
           span {
+            text-align: center;
             color: $color-red;
-            margin-right: 0.8rem;
+            width: 15%;
+            margin-right: 0.6em;
           }
         }
 
         input,
         textarea {
-          width: 68%;
-
-          @include mq() {
-            width: 100%;
-          }
-
-          @include mq("desktop") {
-            width: 83%;
-          }
-
+          width: 100%;
           padding: 0.9em 1.3em;
-          font-size: 1em;
-          letter-spacing: 1px;
           color: $color-input;
-          border: none;
-          border: 1px solid $color-border;
-          background: none;
-          border-radius: 5px;
         }
 
         button {
-          cursor: pointer;
-          font-family: $font-family;
-          padding: 15px 40px;
           margin-left: auto;
           margin-top: 1em;
+          padding: 15px 40px;
 
-          color: $color-white;
           background-color: $color-red;
-          border-radius: 6px;
+          color: $color-white;
+
           border: 2px solid $color-red;
-          font-weight: 500;
+          border-radius: 6px;
+
           transition: 0.2s;
           text-transform: uppercase;
 
