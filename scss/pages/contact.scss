@@ -89,8 +89,8 @@
         margin-bottom: 1em;
 
         label {
-          width: 25%;
-          @include mq() {
+          width: 32%;
+          @include mq("desktop") {
             width: 17%;
           }
           color: $color-h4;
@@ -103,8 +103,13 @@
 
         input,
         textarea {
-          width: 75%;
+          width: 68%;
+
           @include mq() {
+            width: 100%;
+          }
+
+          @include mq("desktop") {
             width: 83%;
           }
 
