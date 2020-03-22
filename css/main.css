@@ -544,6 +544,7 @@ p {
         position: static;
         opacity: 1;
         transition: 0s;
+        margin-left: auto;
         padding: 0;
         background: transparent; } }
     .Header-menu ul {
