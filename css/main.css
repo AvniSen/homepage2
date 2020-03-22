@@ -606,22 +606,21 @@ p {
   padding-bottom: 6em;
   display: flex; }
   .Footer-social {
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    justify-content: space-between; }
     .Footer-social-icon {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1em;
       width: 42px;
       height: 42px;
       border-radius: 4px;
       background-color: #ffffff;
       color: #484d55;
+      font-size: 1em;
       transition: 0.5s; }
       .Footer-social-icon:hover {
         background-color: #d63031;
@@ -640,7 +639,6 @@ p {
   .Footer-helper {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 2em; }
     .Footer-helper-move-top {
       display: flex;

@@ -8,24 +8,25 @@
   display: flex;
 
   &-social {
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
     &-icon {
       display: flex;
       justify-content: center;
       align-items: center;
 
-      font-size: 1em;
       width: 42px;
       height: 42px;
       border-radius: 4px;
+
       background-color: $color-white;
       color: $color-grey;
+      font-size: 1em;
+
       transition: 0.5s;
 
       &:hover {
@@ -57,7 +58,6 @@
   &-helper {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 2em;
 
     &-move-top {
