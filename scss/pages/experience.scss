@@ -30,13 +30,6 @@
 
       box-sizing: border-box;
 
-      &-photo {
-        img {
-          vertical-align: middle;
-          width: 100%;
-        }
-      }
-
       &-text {
         background-color: $color-white;
         padding: 2em;

@@ -456,6 +456,11 @@ h6 {
   font-weight: 700;
   font-family: "Josefin Sans", sans-serif; }
 
+h3,
+h6 {
+  color: #484d55;
+  font-size: 2em; }
+
 h4 {
   text-transform: capitalize;
   color: #333333;
@@ -485,6 +490,11 @@ button {
   cursor: pointer;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500; }
+
+img {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none; }
 
 .container {
   max-width: 1140px;
@@ -731,25 +741,22 @@ button {
   padding-bottom: 3rem;
   text-align: center; }
   .Services h6 {
-    font-size: 2em;
-    color: #484d55;
-    font-weight: 700;
     letter-spacing: 0.25em;
     margin-bottom: 2em; }
-  .Services img {
-    width: 100%; }
-  .Services h3 {
-    color: #484d55;
-    font-size: 2em;
-    margin-top: 1em; }
-  .Services p {
-    color: #b1b4b9;
-    margin-top: 1.3em;
-    font-size: 1.3em;
-    letter-spacing: 0.075em;
-    line-height: 1.5em; }
+  .Services-title {
+    margin-top: 2em;
+    margin-bottom: 4em; }
+    @media (min-width: 992px) {
+      .Services-title {
+        margin-bottom: 5em;
+        margin-top: 2.5em; } }
+    .Services-title p {
+      margin-top: 1.3em;
+      color: #b1b4b9;
+      font-size: 1.3em;
+      letter-spacing: 0.075em;
+      line-height: 1.5em; }
   .Services-details {
-    margin-top: 4em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; }
@@ -759,11 +766,9 @@ button {
         padding-right: 6rem; } }
     @media (min-width: 992px) {
       .Services-details {
-        margin-top: 5em;
         padding-left: 3rem;
         padding-right: 3rem;
-        flex-direction: row;
-        overflow: hidden; } }
+        flex-direction: row; } }
     .Services-details-item {
       display: inline-flex;
       margin-bottom: 5em; }
@@ -773,10 +778,10 @@ button {
           margin-bottom: 6em; } }
       .Services-details-item-icon {
         display: flex;
+        flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        max-width: 60px;
+        width: 60px;
         height: 60px;
         border-radius: 50%;
         font-size: 1.4em;
@@ -793,8 +798,8 @@ button {
           text-align: left; }
         .Services-details-item-text > p {
           margin-top: 0.5em;
-          font-size: 1em;
           color: #777777;
+          font-size: 1em;
           text-transform: capitalize;
           text-align: justify; }
           @media (min-width: 768px) {
@@ -824,9 +829,6 @@ button {
         .Experience-details-item {
           max-width: 32%;
           margin-bottom: 0; } }
-      .Experience-details-item-photo img {
-        vertical-align: middle;
-        width: 100%; }
       .Experience-details-item-text {
         background-color: #ffffff;
         padding: 2em; }
@@ -904,10 +906,6 @@ button {
     @media (min-width: 992px) {
       .Project-details-item {
         max-width: 33%; } }
-    .Project-details-item img {
-      width: 100%;
-      vertical-align: middle;
-      border-style: none; }
 
 .Blog {
   background: url(../images/banner.jpg) no-repeat center;

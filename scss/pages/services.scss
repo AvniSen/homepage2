@@ -7,34 +7,30 @@
   text-align: center;
 
   h6 {
-    font-size: 2em;
-    color: $color-grey;
-    font-weight: 700;
     letter-spacing: 0.25em;
     margin-bottom: 2em;
   }
 
-  img {
-    width: 100%;
-  }
+  &-title {
+    margin-top: 2em;
+    margin-bottom: 4em;
 
-  h3 {
-    color: $color-grey;
-    font-size: 2em;
-    margin-top: 1em;
-  }
+    @include mq("desktop") {
+      margin-bottom: 5em;
+      margin-top: 2.5em;
+    }
 
-  p {
-    color: $color-soft-grey;
-    margin-top: 1.3em;
-    font-size: 1.3em;
-    letter-spacing: 0.075em;
-    line-height: 1.5em;
+    p {
+      margin-top: 1.3em;
+
+      color: $color-soft-grey;
+      font-size: 1.3em;
+      letter-spacing: 0.075em;
+      line-height: 1.5em;
+    }
   }
 
   &-details {
-    margin-top: 4em;
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -45,11 +41,9 @@
     }
 
     @include mq("desktop") {
-      margin-top: 5em;
       padding-left: $gutter;
       padding-right: $gutter;
       flex-direction: row;
-      overflow: hidden;
     }
 
     &-item {
@@ -64,11 +58,11 @@
 
       &-icon {
         display: flex;
+        flex-shrink: 0;
         align-items: center;
         justify-content: center;
 
-        width: 100%;
-        max-width: 60px;
+        width: 60px;
         height: 60px;
         border-radius: 50%;
         font-size: 1.4em;
@@ -97,8 +91,9 @@
             margin-top: 1.3em;
           }
 
-          font-size: 1em;
           color: $color-grey-2;
+
+          font-size: 1em;
           text-transform: capitalize;
           text-align: justify;
         }

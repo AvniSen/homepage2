@@ -25,12 +25,6 @@
       @include mq("desktop") {
         max-width: 33%;
       }
-
-      img {
-        width: 100%;
-        vertical-align: middle;
-        border-style: none;
-      }
     }
   }
 }

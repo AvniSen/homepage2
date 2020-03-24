@@ -21,6 +21,12 @@ h6 {
   font-family: "Josefin Sans", sans-serif;
 }
 
+h3,
+h6 {
+  color: $color-grey;
+  font-size: 2em;
+}
+
 h4 {
   text-transform: capitalize;
   color: $color-h4;
@@ -55,6 +61,12 @@ button {
   cursor: pointer;
   font-family: $font-family;
   font-weight: 500;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
 }
 
 .container {
